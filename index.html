@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <!-- ? Posible código de conexión
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="email" id="name">
+        <label for="">Job</label>
+        <input type="text" name="job" id="job">
+        <button type="submit" onclick="login()">Submit</button>
+    </div> -->
+
+    <div class="container">
+        <span class="big-circle"></span>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">¡Se parte de nuestro portal!</h3>
+                <p class="text">
+                    Aqui podras realizar el registro para acceder a nuestro servicio de proveedores.
+                    <br>
+                    <br>
+                    Para solicitar más información referente puedes encontrarnos en.
+                </p>
+                <div class="info">
+                    <div class="information">
+                        <img src="/img/marcador-de-posicion.png" class="icon" alt="" />
+                        <p>Cl. 90, #19c 74, Bogotá DC - Colombia</p>
+                    </div>
+                    <div class="information">
+                        <img src="/img/email.png" class="icon" alt="" />
+                        <p>infoportales@kpmg.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="/img/telefono.png" class="icon" alt="">
+                        <p>(1) 6188000</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Conéctate con nosotros :</p>
+                    <div class="social-icons">
+                        <a target = "_blank" href="https://www.facebook.com/kpmgencolombia/">
+                            <img src="/img/043-facebook-1.png" class="icon2">
+                        </a>
+                        <a target = "_blank" href="https://twitter.com/KPMG_CO">
+                            <img src="/img/013-twitter-1.png" class="icon2">
+                        </a>
+                        <a target = "_blank" href="https://www.instagram.com/kpmgencolombia/?hl=es">
+                            <img src="/img/034-instagram.png" class="icon2">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/kpmg_colombia/">
+                            <img src="/img/031-linkedin.png" class="icon2">
+                        </a>
+                        <a target="_blank" href="https://home.kpmg/co/es/home.html">
+                            <img src="/img/click.png" class="icon2">
+                        </a>
+                    </div>
+                    <img src="/img/kpmg 1.png" class="image" >
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="indexContactenos.html" method="POST" autocomplete="off"></form>
+                <div class="formulario">
+                    <h3 class="title">Registrarse</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input"  required id="name"/>
+                        <label for="">Nombre Encargado</label>
+                        <span>Nombre Encargado</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="apellido" class="input"  required id="job"/>
+                        <label for="">Rol en la empresa</label>
+                        <span>Rol en la empresa</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="email" class="input"  required/>
+                        <label for="">Nombre Proveedor</label>
+                        <span>Nombre Proveedor</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="phone" class="input" />
+                        <label for="">NIT</label>
+                        <span>NIT</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="phone" class="input" />
+                        <label for="">Pais</label>
+                        <span>Pais</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="phone" class="input" />
+                        <label for="">Ciudad</label>
+                        <span>Ciudad</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email Encargado</label>
+                        <span>Email Encargado</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="phone" class="input" />
+                        <label for="">Contraseña</label>
+                        <span>Contraseña</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="phone" class="input" />
+                        <label for="">Confirmación Contraseña</label>
+                        <span>Confirmación Contraseña</span>
+                    </div>
+                    <!--* Esto es un box de text area más grande con las configuraciones de diseño establecidas.-->
+                    <!-- <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea> -->
+                        <!-- <label for="">Mensaje</label> -->
+                        <!-- <span>Mensaje</span> -->
+                    <!-- </div> -->
+                    <input type="submit" value="Send" class="btn" onclick="login()"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+</html>
