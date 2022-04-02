@@ -329,6 +329,96 @@ textarea.input {
     transform: translate(181%, 11%);
     opacity: 0.2;
 }
+
+/*TODO SELECT, Drop Down List */
+
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    
+}
+
+.content-select select{
+    background-image: url("img/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 5px;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    -o-appearance: none;
+    appearance:none; 
+}
+.content-select select::-ms-expand {
+    display: none;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select{
+	/* max-width: 250px; */
+	position: relative;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    /* height: 42px; */
+    outline: 0;
+	background: transparent;
+	color: white;
+	font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+	font-family: "Poppins", sans-serif;
+	border:2px solid white;
+    border-radius: 25px;
+    position: relative;
+    /* transition: all 0.25s ease; */
+    transition: 0.3s;
+
+}
+
+option{
+    color: white;
+    background: #005EB8;
+}
+option:checked { 
+    background: white;
+    color: #005EB8;
+}
+
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid darkgray;
+	border-bottom:4px solid white;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+    z-index: -100;
+} 
+
+.content-select:hover i{
+	margin-top: 3px;
+    cursor: pointer;
+} 
+
 @media (max-width: 850px) {
     .form {
         grid-template-columns: 1fr;
